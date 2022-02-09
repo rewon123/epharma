@@ -1,4 +1,4 @@
-const cartReducer = (state = [], action) => {
+const cartItems = (state = [], action) => {
     switch (action.type) {
         case 'ADD_TO_CART':
             const alreadyAdded = state.find(crt => crt.id == action.payload.id);
@@ -29,4 +29,5 @@ const cartReducer = (state = [], action) => {
     return state
 }
 
-export default cartReducer
+export default cartItems
+
